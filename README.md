@@ -12,8 +12,12 @@ This project supports Ubuntu Linux 14.04 and Mac OS X Yosemite. It is not tested
 
 ## Quickstart
 ```bash
-$ \Site_Django-main\Site_Django-main $ pip install django
-$ \Site_Django-main\Site_Django-main $ py manage.py runserver
+$ Do everything in the root directory
+$ install and activate venv
+$ command pip install django
+$ command py manage.py makemigrations
+$ command py manage.py migrates
+$ command py manage.py runserver
 ```
 ## Entering the site through the browser
 ```bash
