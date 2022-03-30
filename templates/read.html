@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+
+{% block titulo %}
+Stock Management - Read Page
+{% endblock titulo %} 
+
+{% block body %}
+   <!-- Masthead-->
+<header class="masthead_test">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <div class="fs-4 mx-auto my-0 text-uppercase text-amarelo  mt-2 mb-5 "><a href="{% url 'home' %}">Back</a></div>
+                <h1 class="mx-auto my-0 text-uppercase text-amarelo mx-auto mt-2 mb-5">Product Name:</h1><h1 class="mx-auto my-0 text-uppercase text-info mx-auto mt-2 mb-5">{{ResearchedStock.productsName}}</h1>
+                <h1 class="mx-auto my-0 text-uppercase text-amarelo mx-auto mt-2 mb-5">Product Category:</h1> <h2 class="text-info mx-auto mt-2 mb-5">{{ResearchedStock.productsCategory}}</h2>
+                <h1 class="mx-auto my-0 text-uppercase text-amarelo mx-auto mt-2 mb-5">Product Quantity:</h1><h2 class="mx-auto my-0 text-uppercase text-info mx-auto mt-2 mb-5">{{ResearchedStock.productsQuantity}}</h1>
+                <h1 class="mx-auto my-0 text-uppercase text-amarelo mx-auto mt-2 mb-5">Product Price:</h1><h2 class="text-info mx-auto mt-2 mb-5">{{ResearchedStock.productsPrice}}</h2>
+              <ul>
+
+                
+                <div class="mx-auto my-0 text-uppercase text-amarelo mx-auto mt-2 mb-5" style = "font-family: classic-roman ;font-size:15px; font-style:bold; color:#adb5bd"><a href="{% url 'update' ResearchedStock.id %}">Edit the product</a></div>
+                <div class="mx-auto my-0 text-uppercase text-amarelo mx-auto mt-2 mb-5" style = "font-family: classic-roman ;font-size:15px; font-style:bold; color:#adb5bd"><a href="{% url 'delete' ResearchedStock.id %}">Delete the product</a></div>
+</ul>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Contact-->
+<section class=" contact-section bg-amarelo">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Address</h4>
+                        <hr class="my-4 mx-auto"/>
+                        <div class="small text-black-50">Rua Tal, Cidade Tal, Estado Tal, S/N</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50"><a href="#!">test@yourdomain.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Phone</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">+55 (00) 0000-0000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer bg-amarelo small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; STOCKMANAGEMENT 2022</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+{% endblock body %}

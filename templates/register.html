@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/principal.css' %}">
+{% endblock css %}
+
+{% block titulo %}
+Stock Management - Register Page
+{% endblock titulo %}
+
+{% block body %}
+
+<form method="post">
+    {% csrf_token %}
+
+ 
+        {{form_usuario.username.errors}}
+        <label>Username: </label>
+        {{form_usuario.username}}
+
+
+        {{form_usuario.password1.errors}}
+        <label>Password: </label>
+        {{form_usuario.password1}}
+
+        {{form_usuario.password2.errors}}
+        <label>Password confirmation: </label>
+        {{form_usuario.password2}}
+
+        <input type="submit" value="Register" class="btn btn-primary">
+
+</form>
+
+{% endblock body %}
