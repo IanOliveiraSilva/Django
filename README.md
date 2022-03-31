@@ -4,7 +4,7 @@
 This django project consists of an inventory control website used to create, remove, update and read some product from the store. 
 
 ## Minimum Requirements
-This project supports Ubuntu Linux 14.04 and Mac OS X Yosemite. It is not tested or supported for the Windows OS.
+This project supports Ubuntu Linux 14.04 and Mac OS X Yosemite and Windows OS.
 
 - [Django 1.7+](https://www.djangoproject.com/)
 - [DBSQLITE3](https://www.sqlite.org/index.html)
