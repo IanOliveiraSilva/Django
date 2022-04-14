@@ -15,8 +15,6 @@ This project supports Ubuntu Linux 14.04 and Mac OS X Yosemite and Windows OS.
 $ Do everything in the root directory
 $ install and activate venv
 $ command pip install django
-$ command py manage.py makemigrations
-$ command py manage.py migrates
 $ command py manage.py runserver
 ```
 ## Entering the site through the browser
